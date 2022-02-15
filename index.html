@@ -22,7 +22,7 @@
 
                 </div>
                 <div class=" m-5">
-                    <button id="toss" class="rounded p-1 bg-danger text-light">FLIP AGAIN (Toss)</button>
+                    <button id="toss" class="rounded p-1 btn btn-danger text-light px-3">FLIP AGAIN (Toss)</button>
                 </div>
             </div>
         </div>
@@ -30,9 +30,9 @@
     <script>
         document.getElementById('toss').addEventListener("click", function () {
             function generatePin() {
-                return Math.floor(Math.random() * 3);
-            }
+                return Math.round(Math.random() * 1);
 
+            }
             if (generatePin() % 2 == 0) {
                 document.getElementById('head').style.display = "block";
                 document.getElementById('Tall').style.display = "none";
